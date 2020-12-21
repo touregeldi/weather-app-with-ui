@@ -8,6 +8,8 @@ const app = express();
 const port = process.env.PORT || 9000;
 // Defining paths
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 //GET commands
 app.get("/user", (req, res) => {
   res.send({
