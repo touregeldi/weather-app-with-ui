@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 9000;
 // Defining paths
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(process.cwd(), 'client/build')));
 
 //GET commands
 app.get("/user", (req, res) => {
@@ -53,7 +53,7 @@ app.get("/city", (req, res) => {
 
 //get not found
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  res.sendFile(path.join(process.cwd()+'/client/build/index.html'));
 });
 
 //Serving app to localhost
