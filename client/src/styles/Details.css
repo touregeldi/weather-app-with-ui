@@ -1,0 +1,21 @@
+.infff {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -15px;
+}
+
+.weatherdetails {
+  color: #fff;
+}
+
+.numbers {
+  color: white;
+}
+
+.details {
+  flex: 1;
+  height: 100%;
+  border-bottom: 1px solid #e8e3e3;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}

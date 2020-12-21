@@ -1,0 +1,66 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1.7;
+  z-index: 1;
+}
+
+.first {
+  flex: 1;
+}
+
+.second {
+  flex: 1;
+}
+
+.information {
+  flex: 1;
+  display: flex;
+
+  align-items: center;
+  padding: 0 50px 0 150px;
+}
+
+.degree h1 {
+  font-size: 180px;
+  font-weight: 100;
+}
+
+.degree span {
+  font-weight: 100;
+}
+
+.city {
+  margin-top: 40px;
+}
+.city h1 {
+  font-size: 70px;
+  font-weight: 20;
+  line-height: 5%;
+}
+
+.city p {
+  font-size: 25px;
+}
+
+.degree {
+  padding: 0;
+}
+
+.weatherIcon {
+  font-size: 25px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: -20px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.icon {
+  margin-bottom: -25px;
+  padding: -25px;
+}
+.city {
+  text-align: center;
+}
