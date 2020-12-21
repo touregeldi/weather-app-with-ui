@@ -52,11 +52,8 @@ app.get("/city", (req, res) => {
 });
 
 //get not found
-app.get("*", (req, res) => {
-  res.render("404", {
-    title: "404",
-    errorMessage: "Page not found",
-  });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
 //Serving app to localhost
